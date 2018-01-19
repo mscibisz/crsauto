@@ -5,9 +5,7 @@ body
 	background-image: url(../Images/banner.jpg);
     margin: 0;
     background-repeat: repeat;
-	font-family: 'Open Sans', sans-serif;	
-
-
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1
@@ -32,35 +30,38 @@ span
 }
 
 /*TOP MENU*/
-#topmenubanner 
+header
 {
 	background-image: url(../Images/topmenu.png);
 	background-repeat: repeat-x;
 	height: 80px;
 }
 
-#topmenu 
+nav
 {
+	display: flex;
 	width: 1200px;
 	height: 80px;
 	margin: auto;
-	/*background-color: #00ffee;*/
-
 }
 
-#crs
+nav a:nth-child(1)
 {
-	width: 800px;
-	height: 80px;
-	margin: left;
-	float: left;
+	flex: 4;
+}
+nav a:nth-child(2)
+{
+	flex: 1;
+}
+nav a:nth-child(3)
+{
+	flex: 1;
 }
 
-#crsauto
+.crsauto
 {
 	width: 200px;
 	height: 80px;
-	float: left;
 	background-image: url(../Images/crsauto.png);
 }
 
@@ -69,80 +70,85 @@ span
 	width: 200px;
 	height: 80px;
 	line-height: 80px;
-	float: left;
 	text-align: center;
 	color: #fff;
 	font-size: 16px;
 }
 
-.menubutton:hover	{background-color: #5a948f;}
+.menubutton:hover
+{
+	background-color: #5a948f;
+}
 
-/*BANNER*/
-#banner 
+/*Content*/
+main
 {
 	width: 1200px;
 	height: 600px;
 	margin: auto;
+	display: flex;
 }
 
-/*BANNER LEFT SIDE*/
-#bannertext
+/*Content LEFT SIDE*/
+article
 {
 	width: 780px;
 	height: 600px;
-	float: left;
 	margin: auto;
-
 }
 
-#textinbanner
+.textinbanner
 {
 	display: inline-block;
 	vertical-align: middle;
 	height: 290px;
 	width: 770px;
 	padding: 150px 0 0 10px;
-	float: left;
 	margin: auto;
 	line-height: 220%;
 
 }
 
-#spaceleft
+.buttonallegro
 {
-	height: 60px;
-	float: left;
-	width: 50px;
-}
-
-#buttonallegro
-{
+	display: inline-block;
+	padding-left: 50px;
 	height: 60px;
 	width: 200px;
-	float: left;
-}
 
-#spaceright
-{
-	height: 60px;
-	float: left;
-	width: 530px;
 }
 
 /*BANNER RIGHT SIDE*/
-#bannerengine
+aside
 {
 	width: 420px;
 	height: 420px;
-	float: left;
 	padding-top: 90px;
 	padding-bottom: 90px;
 }
+
+/*FOOTER*/
+footer
+{	
+	position: absolute;
+
+	background-color: #99e3e5;
+	color: #777;
+
+	bottom: 0px;
+	width: 100%;
+
+	line-height: 250%;
+	text-align: center;
 }
 
-/*
-MAXIMUM WIDTH 1199 PX
-*/
+footer span
+{
+	padding: 0 20px 0 0;
+}
+}
+
+/*MAXIMUM WIDTH 1199 PX*/
 
 @media screen and (max-width: 1199px) {
 
