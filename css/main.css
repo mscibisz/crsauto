@@ -1,102 +1,97 @@
 body
 {
-	background-image: url(../Images/banner.jpg);
     margin: 0;
-    background-repeat: repeat;
 	font-family: 'Open Sans', sans-serif;
 }
 
 h1
 {
 	font-size: 36px;
-	line-height: 150%;
+	line-height: 120%;
 	font-weight: normal;
-	color: #fff;
+	color: #E66401;
+	padding:  20px 0 26px 0;
+	margin: auto;
 }
 
 p
 {
-	font-size: 16px;
-	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1.2px;
 }
 
-span 
+a
 {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+	text-decoration: none;
 }
 
-/*TOP MENU*/
+.car
+{
+	height: 200px;
+	width: 900px;
+	margin: auto;
+	text-align: center;
+}
+
 header
 {
 	display: flex;
-	background-image: url(../Images/topmenu.png);
-	background-repeat: repeat-x;
-	height: 80px;
+	background-color: #085293;
+	height: 60px;
 }
 
 nav
 {
 	display: flex;
-	width: 1200px;
-	height: 80px;
+	width: 900px;
+	height: 60px;
 	margin: auto;
 }
 
-nav a:nth-child(1)
+nav a
 {
-	flex: 4;
-}
-nav a:nth-child(2)
-{
-	flex: 1;
-}
-nav a:nth-child(3)
-{
-	flex: 1;
+	flex: 1 0 auto;
+	max-width: 200px;
 }
 
 .crsauto
 {
 	width: 200px;
-	height: 80px;
-	background-image: url(../Images/crsauto.png);
+	height: 60px;
 }
 
 .menubutton
 {
-	width: 200px;
-	height: 80px;
+	max-width: 180px;
+	height: 60px;
 
-	line-height: 80px;
+	line-height: 60px;
 	text-align: center;
+
 	color: #fff;
 	font-size: 16px;
+	padding: 0 10px 0 10px;
 }
 
 .menubutton:hover
 {
-	background-color: #5a948f;
+	background-color: #106CAC;
+	color: #EEAD00;
 }
 
-/*Content*/
 main
 {
 	margin: auto;
-	margin-top: 90px;
+	margin-top: 30px;
 
-	width: 1200px;
+	max-width: 900px;
 	display: flex;
 }
 
-/*Content LEFT SIDE*/
 article
 {
 	display: flex;
 	flex-direction: column;
-
-	width: 780px;
 	margin: auto;
 }
 
@@ -106,56 +101,53 @@ article
 	flex-direction: column;
 
 	vertical-align: middle;
-	height: 290px;
-	width: 770px;
-	padding: 0 0 0 10px;
+
+	max-width: 880px;
+	padding: 0 10px 0 10px;
 	margin: auto;
 	line-height: 220%;
 
+/*	background-color: #dbe9f2;*/
 }
 
 figure
 {
+	margin: auto;
 	display: flex;
 	flex-direction: row;
-	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 100px;
 }
 
 .buttonallegro
 {
-	display: flex;
-	flex-direction: row;
-
-	height: 60px;
+	display: inline-block;
 	width: 200px;
-}
-
-.spaceleft
-{
-	display: flex;
-	flex-direction: row;
-
-	width: 50px;
 	height: 60px;
+	line-height: 60px;
+
+	background-color: #fd7813;
+
+	border-radius: 5px;
+
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
 }
 
-.spaceright
+.buttonebay
 {
-	display: flex;
-	flex-direction: row;
+	display: inline-block;
+	width: 196px;
+	height: 56px;
+	line-height: 56px;
 
-	width: 530px;
-	height: 60px;
-}
+	border-radius: 5px;
+	border: solid 2px #88b719;
 
-/*BANNER RIGHT SIDE*/
-aside
-{
-	display: flex;
-	flex-direction: column;
-
-	width: 420px;
-	height: 420px;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
 }
 
 /*FOOTER*/
@@ -163,14 +155,24 @@ footer
 {	
 	position: absolute;
 
-	background-color: #99e3e5;
-	color: #777;
+	background-color: #106CAC;
+	color: #fff;
 
 	bottom: 0px;
 	width: 100%;
 
 	line-height: 250%;
 	text-align: center;
+}
+
+footer a
+{
+	color: #eee;
+}
+
+footer a:hover
+{
+	color: #EEAD00;
 }
 
 footer span
