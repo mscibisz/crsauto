@@ -47,7 +47,7 @@ a
 .car span:nth-child(2) {
 	flex: 999;
 	height: 200px;
-	max-width: 77px;
+	max-width: 102px;
 }
 
 .car img:nth-child(3) {
@@ -58,7 +58,7 @@ a
 .car span:nth-child(4) {
 	flex: 999;
 	height: 200px;
-	max-width: 195px;
+	max-width: 170px;
 }
 
 .car img:nth-child(5) {
