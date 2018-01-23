@@ -78,7 +78,7 @@ header
 nav
 {
 	display: flex;
-	width: 900px;
+	max-width: 900px;
 	height: 60px;
 	margin: auto;
 	flex: 1;
