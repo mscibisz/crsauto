@@ -27,10 +27,30 @@ a
 
 .car
 {
+	display: flex;
 	height: 200px;
-	width: 900px;
-	margin: auto;
-	text-align: center;
+	max-width: 900px;
+/*	margin: auto;*/
+}
+
+.car img {
+	display: flex;
+}
+
+.car img:nth-child(1) {
+	flex: 1 0 auto;
+	padding-top: 75px;
+	
+}
+
+.car img:nth-child(3) {
+	flex: 1 0 auto;
+}
+
+.car img:nth-child(5) {
+	flex: 1 0 auto;
+	padding-top: 50px;
+	max-width: 100px;
 }
 
 header
@@ -95,7 +115,7 @@ article
 	margin: auto;
 }
 
-.textinbanner
+.content
 {
 	display: flex;
 	flex-direction: column;
@@ -150,15 +170,11 @@ figure
 	color: #fff;
 }
 
-/*FOOTER*/
 footer
 {	
-	position: absolute;
-
 	background-color: #106CAC;
 	color: #fff;
 
-	bottom: 0px;
 	width: 100%;
 
 	line-height: 250%;
@@ -179,5 +195,3 @@ footer span
 {
 	padding: 0 20px 0 0;
 }
-
-
